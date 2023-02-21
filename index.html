@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio web de la selección Colombia de Ultimate Frisbee. Aquí se encuentra toda la información sobre el Ultimate Frisbee en Colombia y su equipo nacional">
+    <meta name="keywords" content="Ultimate, Frisbee, Colombia, Olímpicos">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Roboto:wght@100;900&family=Work+Sans&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- CSS del proyecto -->
+    <link rel="stylesheet" href="css/styles.css">
+    <title> Inicio </title>
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+    <header>
+
+        <div class="header-logo">
+            <img src="img/logo.png" alt="Logo Federación Colombiana de Ultimate Frisbee">
+        </div>
+
+        <!-- Menú dropdown para mobile y tablet-->
+        <div class="dropdown menu-desplegable">
+
+            <button class="btn dropdown-toggle boton-menu" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Menú
+            </button>
+
+            <ul class="dropdown-menu">
+                <li> <a class="dropdown-item" href="index.html"> Inicio </a> </li>
+                <li> <a class="dropdown-item" href="pages/roster.html"> Roster </a> </li>
+                <li> <a class="dropdown-item" href="pages/tienda.html"> Tienda </a> </li>
+                <li> <a class="dropdown-item" href="pages/galeria.html"> Galería </a> </li>
+                <li> <a class="dropdown-item" href="pages/contacto.html"> Contacto </a> </li>
+            </ul>
+
+        </div>
+
+        <!-- Menú de navegación para desktop -->
+        <nav class="menu">
+            <ul>
+                <li> <a href="index.html"> Inicio </a> </li>
+                <li> <a href="pages/roster.html"> Roster </a></li>
+                <li> <a href="pages/tienda.html"> Tienda </a> </li>
+                <li> <a href="pages/galeria.html"> Galería </a> </li>
+                <li> <a href="pages/contacto.html"> Contacto </a> </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- Titulo principal -->
+        <h1 class="titulo"> Selección Colombia <span> de Ultimate Frisbee </span> </h1>
+
+        <!-- Sección información -->
+        <div class="informacion">
+            <h2 class="informacion-titulo"> Información </h2>
+            <p class="informacion-parrafo"> El ultimate frisbee se juega con dos equipos de 7 jugadores. El objetivo de
+                cada equipo es defender su zona de anotación, la cual se encuentra al final de cada extremo de la
+                cancha. Se hace un gol cuando alguno de los jugadores recibe el frisbee en la zona de anotación del
+                equipo rival. <br><br>
+
+                En el año 2000 se lleva a cabo el primer torneo de Ultimate Frisbee en Colombia, realizado en la
+                Universidad EAFIT y organizado por el equipo Mamoots de Bogotá. Este evento ayuda a que se empiece a
+                practicar el deporte en otras ciudades, creando nuevos equipos en todo el país. <br><br>
+
+                Actualmente, Colombia es uno de los referentes de ultimate frisbee a nivel mundial, demostrando alta
+                competencia a nivel nacional e internacional, incluyendo múltiples medallas en competencias mundiales.
+            </p>
+
+            <div class="informacion-imagen">
+                <img src="img/info.jpeg" alt="Imagen de partido selección Colombia de ultimate">
+            </div>
+
+
+        </div>
+
+        <!-- Videos -->
+        <div class="videos">
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/U26mZQPkl8E"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+
+
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xS68krI7HbA"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ITRd9i0k4NM"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+
+
+        </div>
+
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+
+        <div class="footer-iconos">
+            <a href="https://www.facebook.com/FECODV" target="_blank"><img src="img/facebook.png"
+                    alt="Ícono de facebook"></a>
+            <a href="https://www.instagram.com/fecodv" target="_blank"><img src="img/instagram.png"
+                    alt="Ícono de instagram"></a>
+            <a href="https://www.youtube.com/@fecodv7309" target="_blank"><img src="img/youtube.png"
+                    alt="Ícono de Youtube"></a>
+        </div>
+
+        <h3 class="derechos"> Todos los derechos reservados </h3>
+
+    </footer>
+
+    <!-- JS de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

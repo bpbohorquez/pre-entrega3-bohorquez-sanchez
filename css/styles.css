@@ -1,0 +1,251 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* Fuente global */
+  font-family: 'Montserrat', sans-serif; }
+
+/* Color de fondo global */
+body {
+  background: #fef7ea;
+  background: linear-gradient(90deg, #fef7ea 0%, #fef7ea 68%, blanchedalmond 100%); }
+
+header, header .menu-desplegable .boton-menu, footer {
+  background-color: #ffcd00; }
+
+/* Estilos Mobile Inicio: */
+/* Estilos encabezado */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* Estilos menu de navegacion */ }
+  header .header-logo img {
+    width: 5rem; }
+  header .menu {
+    display: none; }
+  header .menu-desplegable ul {
+    background-color: rgba(255, 205, 0, 0.92);
+    border: solid 0.5px rgba(0, 0, 0, 0.514);
+    font-weight: 500; }
+  header .menu-desplegable .boton-menu {
+    border: solid 1.5px black;
+    color: black;
+    font-weight: 500; }
+  header .menu-desplegable .boton-menu:hover {
+    background-color: black;
+    border: solid 1.5px #ffcd00;
+    color: #ffcd00;
+    transition: 0.2s all; }
+
+/* Estilos main */
+main .titulo {
+  text-align: center;
+  margin: 1rem; }
+  main .titulo .span {
+    display: block; }
+
+main .informacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  main .informacion .informacion-titulo {
+    padding: 1rem; }
+  main .informacion .informacion-parrafo {
+    padding: 0 1.5rem;
+    text-align: justify; }
+  main .informacion .informacion-imagen {
+    display: flex;
+    justify-content: center;
+    margin: 1rem; }
+    main .informacion .informacion-imagen img {
+      width: 80%; }
+
+main .videos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  row-gap: 0.5rem;
+  justify-items: center;
+  margin: 1rem; }
+  main .videos iframe {
+    width: 80%; }
+
+/* Estilos footer */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem; }
+  footer .derechos {
+    font-weight: 400;
+    font-size: small; }
+
+/* Estilos Tablet Inicio: */
+@media screen and (min-width: 600px) {
+  header {
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem; }
+  main .informacion .informacion-imagen img {
+    width: 60%; }
+  main .informacion .informacion-parrafo {
+    padding: 0 3.5rem; }
+  main .videos iframe {
+    width: 60%; }
+  footer .footer-iconos a img:hover {
+    transform: scale(1.1);
+    transition: 0.5s all; } }
+
+/* Estilos Desktop Inicio: */
+@media screen and (min-width: 1024px) {
+  /* Estilos menu desplegable */
+  header .menu-desplegable {
+    display: none; }
+  header .menu {
+    display: block; }
+    header .menu ul {
+      display: flex;
+      gap: 1rem;
+      padding: 0;
+      margin: 0; }
+      header .menu ul li {
+        list-style: none;
+        font-weight: 600;
+        font-size: 1rem; }
+        header .menu ul li a {
+          text-decoration: none;
+          color: inherit; }
+      header .menu ul li:hover {
+        transform: scale(1.1);
+        transition: 0.3s all; }
+  main .titulo {
+    margin: 2rem; }
+    main .titulo span {
+      display: inline; }
+  main .informacion {
+    display: grid;
+    grid-template-areas: "titulo none" "parrafo imagen";
+    grid-template-columns: 60% 40%;
+    justify-items: center;
+    align-items: center; }
+    main .informacion .informacion-titulo {
+      grid-area: titulo; }
+    main .informacion .informacion-parrafo {
+      grid-area: parrafo;
+      margin: 0;
+      padding-right: 0; }
+    main .informacion .informacion-imagen {
+      grid-area: imagen;
+      margin: 0; }
+      main .informacion .informacion-imagen img {
+        width: 80%; }
+  main .videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 2rem; }
+    main .videos iframe {
+      width: 40%; } }
+
+/* Estilos Tienda */
+main .productos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+  row-gap: 1rem;
+  margin-bottom: 2rem; }
+  main .productos .item-tienda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%; }
+    main .productos .item-tienda img {
+      width: 60%; }
+    main .productos .item-tienda h2 {
+      font-weight: 500;
+      font-size: large; }
+
+/* Estilos Tablet Tienda: */
+@media screen and (min-width: 600px) {
+  main .productos {
+    grid-template-columns: 1fr 1fr; }
+    main .productos .item-tienda img {
+      width: 80%; }
+    main .productos .item-tienda img:hover {
+      transform: scale(1.04);
+      transition: 0.3s all; } }
+
+/* Estilos Desktop Tienda: */
+@media screen and (min-width: 1024px) {
+  main .productos {
+    grid-template-columns: 1fr 1fr 1fr; }
+    main .productos .item-tienda img {
+      width: 80%; } }
+
+/* Estilos Roster */
+main .jugadores {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 40px 0; }
+  main .jugadores img {
+    width: 65%; }
+
+/* Estilos Tablet Roster: */
+@media screen and (min-width: 600px) {
+  main .jugadores img {
+    width: 45%; }
+  main .jugadores img:hover {
+    transform: scale(1.1);
+    transition: 0.3s all; } }
+
+/* Estilos Desktop Roster: */
+@media screen and (min-width: 1024px) {
+  main .jugadores img {
+    width: 30%; } }
+
+/* Estilos Galeria */
+main .fotos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 2rem 0; }
+  main .fotos img {
+    width: 75%; }
+
+/* Estilos Tablet Galeria: */
+@media screen and (min-width: 600px) {
+  main .fotos img {
+    width: 45%; }
+  main .fotos img:hover {
+    transform: scale(1.15);
+    transition: 0.3s all; } }
+
+/* Estilos Desktop Galeria: */
+@media screen and (min-width: 1024px) {
+  main .fotos img {
+    width: 30%; } }
+
+/* Estilos Contacto */
+.main-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh; }
+  .main-contacto .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%; }
+    .main-contacto .formulario fieldset .formulario__input {
+      font-weight: 500;
+      text-align: center;
+      margin: 5px; }

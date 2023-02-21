@@ -1,0 +1,42 @@
+@import "../utilidades/mixin";
+
+/* Estilos Galeria */
+main {
+
+    .fotos {
+        @include flex-wrap-centro;
+        margin: 2rem 0;
+
+        img {
+            width: 75%;
+        }
+    }
+}
+
+/* Estilos Tablet Galeria: */
+@media screen and (min-width:600px) {
+    main {
+        .fotos {
+    
+            img {
+                width: 45%;
+            }
+
+            img:hover {
+                transform: scale(1.15);
+                transition: 0.3s all;
+            }
+        }
+    }
+}
+
+/* Estilos Desktop Galeria: */
+@media screen and (min-width:1024px) {
+    main {
+        .fotos {
+            img {
+                width: 30%
+            }
+        }
+    }
+}

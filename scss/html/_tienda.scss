@@ -1,0 +1,68 @@
+@import "../utilidades/mixin";
+
+/* Estilos Tienda */
+main {
+
+    .productos {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        justify-items: center;
+        row-gap: 1rem;
+        margin-bottom: 2rem;
+
+        .item-tienda {
+            @include flex-columna-centro;
+            gap: 0.5rem;
+            width: 100%;
+
+            img {
+                width: 60%;
+            }
+
+            h2 {
+                font-weight: 500;
+                font-size: large;
+            }
+        }
+
+    }
+
+}
+
+/* Estilos Tablet Tienda: */
+@media screen and (min-width:600px) {
+    main {
+        .productos {
+            grid-template-columns: 1fr 1fr;
+
+            .item-tienda {
+                img {
+                    width: 80%;
+                }
+
+                img:hover {
+                    transform: scale(1.04);
+                    transition: 0.3s all;
+                }
+            }
+        }
+    }
+}
+
+/* Estilos Desktop Tienda: */
+@media screen and (min-width:1024px) {
+    main {
+        .productos {
+            grid-template-columns: 1fr 1fr 1fr;
+
+            .item-tienda {
+                img {
+                    width: 80%;
+                }
+            }
+        }
+
+
+    }
+}

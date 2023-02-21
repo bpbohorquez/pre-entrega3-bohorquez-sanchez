@@ -1,0 +1,41 @@
+@import "../utilidades/mixin";
+
+/* Estilos Roster */
+main {
+    .jugadores {
+        @include flex-wrap-centro;
+        margin: 40px 0;
+
+        img {
+            width: 65%;
+        }
+    }
+}
+
+/* Estilos Tablet Roster: */
+@media screen and (min-width:600px) {
+    main {
+        .jugadores {
+
+            img {
+                width: 45%;
+            }
+
+            img:hover {
+                transform: scale(1.1);
+                transition: 0.3s all;
+            }
+        }
+    }
+}
+
+/* Estilos Desktop Roster: */
+@media screen and (min-width:1024px) {
+    main {
+        .jugadores {
+            img {
+                width: 30%;
+            }
+        }
+    }
+}

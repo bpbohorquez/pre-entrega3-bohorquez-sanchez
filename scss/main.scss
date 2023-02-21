@@ -1,0 +1,22 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* Fuente global */
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Color de fondo global */
+body {
+    background: rgb(254, 247, 234);
+    background: linear-gradient(90deg, rgba(254, 247, 234, 1) 0%, rgba(254, 247, 234, 1) 68%, rgba(255, 235, 205, 1) 100%);
+}
+
+// Import de secciones
+@import "html/inicio";
+@import "html/tienda";
+@import "html/roster";
+@import "html/galeria";
+@import "html/contacto";
